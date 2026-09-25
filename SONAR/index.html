@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SONAR — Live Campus Bus Tracking</title>
+  <meta name="description" content="SONAR (Student Online Navigation And Routing) — track your college bus in real time." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav class="nav">
+    <div class="container nav-inner">
+
+      <a class="logo" href="#/">
+        <div class="mark">🚌</div>
+        <div>
+          SONAR
+          <small>Student Online Navigation &amp; Routing</small>
+        </div>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a class="nav-link" href="#/">Home</a>
+        <a class="nav-link" href="#/track">Track Bus</a>
+        <a class="nav-link" href="#/schedule">Timetable</a>
+        <a class="nav-link" href="#/about">About</a>
+      </div>
+
+      <div class="nav-right" id="navRight"></div>
+
+      <button class="burger" id="burger" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       MAIN APP — pages are rendered here by script.js
+       ============================================================ -->
+  <main id="app"></main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="brand-col">
+          <a class="logo" href="#/">
+            <div class="mark">🚌</div>
+            <div>
+              SONAR
+              <small>Student Online Navigation &amp; Routing</small>
+            </div>
+          </a>
+          <p>
+            SONAR — Student Online Navigation And Routing. Live bus positions,
+            accurate ETAs, and smart boarding alerts for every campus commuter.
+          </p>
+        </div>
+
+        <div>
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#/track">Live Tracker</a></li>
+            <li><a href="#/schedule">Timetable</a></li>
+            <li><a href="#/register">Create Account</a></li>
+            <li><a href="#/login">Sign In</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#/about">About SONAR</a></li>
+            <li><a href="#/about">Our Team</a></li>
+            <li><a href="#/about">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#/about">Help Center</a></li>
+            <li><a href="#/about">FAQs</a></li>
+            <li><a href="#/about">Report a Delay</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2025 SONAR · Student Online Navigation And Routing</span>
+        <span>Built for campus commuters 🚌</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       TOAST CONTAINER (popup messages go here)
+       ============================================================ -->
+  <div id="toast"></div>
+
+  <!-- Main JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
